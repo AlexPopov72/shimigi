@@ -1,0 +1,120 @@
+.conteiner{
+    margin: 0 auto;
+    width: auto;
+    padding: 0 .75rem;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+.head{
+    position: fixed;
+    display:inline-block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.headtop__top{
+    display:flex;
+    width: 100%;
+    height: 54px;
+    background: #274646;
+   
+
+}
+.headtop__left{
+    position: relative;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+.headtop_left__burg{
+    margin-left: 316px;
+}
+.headtop_left__logo{
+    margin-left: 44px;
+}
+.headtop_left__tel{
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A0A0A0;
+}
+.headtop_left__mapicon{
+    margin-left: 33px;
+}
+.headtop_left__adress{
+    margin-left: 9px;
+   
+    color: #FFE091; 
+}
+.font_top{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+.headtop__right{
+    position: relative;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: center; 
+}
+.headtop_right__shicon{
+    margin-left: 580px;
+}
+.headtop_right__shimigi{
+    margin-left: 9px;
+    color: #FFBDC8;
+}
+.headtop_right__bagshop{
+    padding-left: 30px;
+}
+.headtop_right__red_namber{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    background: #B20D30;
+    width:18px;
+    height:18px;
+    line-height: 18px;
+    border-radius: 50%;
+    padding-left: 1px;
+}
+.headtop_right__prisebag{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+
+.menu_top{
+    border: 2px solid rgb(255, 15, 47); 
+}
+.menu_low{
+    border: 2px solid rgb(0, 0, 0); 
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    text-emphasis: none;
+}
+@font-face {
+    
+    font-family: "Source Sans Pro"; 
+    src: url("./styles/SourceSansPro-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
