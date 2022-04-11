@@ -78,9 +78,9 @@ body {
     flex-wrap: nowrap;
     align-content: center;
 }
-.headtop_right__shicon{
-    /* margin-left: 430px; */
-}
+/* .headtop_right__shicon{ 
+     margin-left: 430px; 
+}*/
 .headtop_right__shimigi{
     margin-left: 9px;
     color: #FFBDC8;
@@ -265,7 +265,9 @@ li{
     align-items: center;
     justify-items: center;
     color: #274646;
-    margin: 0 310px;
+    width: 1295px;
+    margin: 0 auto;
+    grid-column-gap: 24px;
     }
 .cart{
     display: block;
