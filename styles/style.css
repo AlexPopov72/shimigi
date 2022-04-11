@@ -182,15 +182,13 @@ a {
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-.menu_low{
+.menu__low{
     position: relative;
     display: flex;
-    width: auto;
-    height: 46px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 588px;  
+    width: 588px;
+    height: 56px;
+    flex-wrap: nowrap; 
+    margin-left: 260px;
 }
 .menulow__ul{
     display: inline-flex;
@@ -206,15 +204,24 @@ a {
     flex-direction: row;
     height: inherit;
     height: 56px;
+    padding: 8px 0;
 
    }
 .menulow__li{
-
+    display: flex;
     border: 2px solid #F7F7F7;
     box-sizing: border-box;
     border-radius: 46px;
     height: 40px;
     color: #6B6B6B;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 12px 12px 14px;
+    margin: 0 9px;
+    
 }
 li{
     list-style: none;
