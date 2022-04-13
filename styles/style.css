@@ -5,6 +5,17 @@
 *{
     box-sizing: border-box;
     cursor: default;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+button{
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
 }
 body {
     font-family: 'ValueSansPro', sans-serif;
@@ -14,7 +25,6 @@ body {
     text-rendering: optimizeSpeed;
     margin: 0;
     padding: 0;
-   
 }
 .head{
     position: fixed; 
@@ -30,7 +40,7 @@ body {
     display:flex;
     width: 100%;
     height: 54px;
-    background: #274646;    
+    background: #274646;
 }
 .headtop__left{
     display: flex;
@@ -38,118 +48,80 @@ body {
     justify-content: center;
     width: 100%;
     gap: 24px;
-
 }
-.headtop_left__burg{
-    margin-right: 28px;
+/* .headtop_left__burg{
+   
 }
 .headtop_left__logo{
-    margin-right: 28px;
-}
+     */
 .headtop_left__tel{
     font-size: 14px;
     color: #A0A0A0;
 }
-
 .headtop_left__adress{
     display: flex;
-    margin-right: 100px;
     font-size: 14px;
     color: #FFE091; 
     font-style: normal;
-}
-.font_top{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    align-items: center;
 }
 .headtop__right{
-    position: relative;
     display: flex;
-    height: inherit;
+    width: 645px;
     align-items: center;
     justify-content: flex-end;
-    width: 645px;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-content: center;
+    gap: 1em;
 }
 /* .headtop_right__shicon{ 
      margin-left: 430px; 
 }*/
 .headtop_right__shimigi{
-    margin-left: 9px;
     color: #FFBDC8;
 }
-.headtop_right__bagshop{
+/* .headtop_right__bagshop{
     padding-left: 30px;
-}
+} */
 .headtop_right__red_namber{
-    display: inline-block;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 900;
-    text-align: center;
+    text-align: center; 
     background: #B20D30;
     width:18px;
     height:18px;
     line-height: 18px;
     border-radius: 50%;
-    margin-left: 2px;
 }
 .headtop_right__prisebag{
-    font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
-    padding-left: 8px;
 }
 /* img {
     max-width: 100%;
     display: block; */
-
 a {
     text-decoration: none;
     text-emphasis: none;
 }
 .menu_top{
-    position: relative;
     display: flex;
-    width: auto;
     height: 46px;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    /*lign-content: center;*/
-    flex-direction: row;
-    
 }
 .menu_top::-webkit-scrollbar {
         display: none;
 }   
 .menutop__ul{
-    display: inline-flex;
-    padding-inline-start: 0;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    align-items: flex-start;
-    align-content: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    height: inherit;
+    display: flex;
     overflow-x: auto;
     width: 1295px;
     border-bottom: 1px solid #E5E5E5;
-   
     }
-
 .menutop__ul::-webkit-scrollbar{
 width: 0;
 }
-
-
 .menutop__li:first-child{
     margin: 0 26px 0 0;
 }
@@ -182,41 +154,29 @@ a {
     display: flex;
     width: 588px;
     height: 56px;
-    flex-wrap: nowrap; 
+    /* flex-wrap: nowrap;  */
     margin-left: 260px;
 }
 .menulow__ul{
-    display: inline-flex;
-    padding-inline-start: 0;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    align-items: flex-start;
+    display: flex;
+    align-items: flex-start; 
     align-content: flex-end;
     flex-wrap: nowrap;
-    flex-direction: row;
-    height: inherit;
-    height: 56px;
-    padding: 8px 0;
-
+    flex-direction: row; 
+    height: inherit; 
+    padding: 8px 0; 
    }
 .menulow__li{
     display: flex;
-    border: 2px solid #F7F7F7;
-    box-sizing: border-box;
-    border-radius: 46px;
-    height: 40px;
-    color: #6B6B6B;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
+}
+.menulow__botton{
+    background: #E9E6E6;
+    color: #274646;
     padding: 12px 12px 12px 14px;
-    margin: 0 9px;
-    
+    border-radius: 46px;
+    transition: .5s;
+    border: none;
+    font-weight: 700;
 }
 li{
     list-style: none;
@@ -226,7 +186,7 @@ li{
 
 
 .zagluchka{
-    height: 160px;
+    height: 156px;
 }
 .story_cont{
     display:flex;
@@ -244,28 +204,33 @@ li{
     background-color: #A0A0A0;
 }
 
-.story_block{
-    display: block;
-    width: 152px;
-    height: 276px;
-    margin: 20px 12px;
-    border-radius: 16px;    
+.story_block{   
+
+    width: 160px;
+    height: 284px;
+    padding: 2px;
+    margin: 20px 8px;
+    border-radius: 16px;
+    border: 2px solid #F293A2;
+
 }
-h3 {
+    /* /////////////////////////////////////   CART   ////////////////////////////////// */
+.hedder_cart{
+    grid-area: head; 
     font-weight: 500;
     font-size: 32px;
-    line-height: 32px;
     color: #274646;
-    margin: 64px 0 32px 269px;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
-
-    /* /////////////////////////////////////   CART   ////////////////////////////////// */
-
 .cont_cart{
+    
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     color: #274646;
-    width: 1295px; 
+    width: 1295px;  
     margin: 0 auto;
     grid-gap: 32px 24px;
 }
@@ -346,13 +311,15 @@ h3 {
     }
 .cart_prise_new{
     margin-left: 8px;
-    display: flex;
     font-size: 14px;
     background: #E9E6E6;
     color: #274646;
     padding: 10px 23px;
     border-radius: 46px;
     transition: .5s;
+    border:none;
+    font-weight: 700;
+    font-family: 'ValueSansPro', sans-serif;
     
 }
 .cart_prise_new:hover{
@@ -360,7 +327,13 @@ h3 {
     background-color:#274646;
     transition: .5s;
 }
+.cont_cart{
+    grid-template-areas:
+"head head head head"
+"cart cart cart cart"
+"cart cart cart cart";
 
+}
 
 @font-face {
     font-family: 'ValueSansPro';
@@ -415,9 +388,9 @@ h3 {
     .container {
         max-width: 720px;
     }
-    .cart{
+    /* .cart{
 
-    }
+    } */
 
 }
 
