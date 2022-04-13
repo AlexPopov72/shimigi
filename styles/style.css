@@ -1,6 +1,7 @@
 .conteiner{
     margin: 0 auto;
     width: auto;
+    max-width: 1320px;
 }
 *{
     box-sizing: border-box;
@@ -28,7 +29,9 @@ body {
 }
 .head{
     position: fixed; 
-    display:inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     left: 0;
     top: 0;
     width: 100%;
@@ -36,17 +39,22 @@ body {
     z-index: 1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.headtop__color{
+    width: 100%;
+    background: #274646;
+    display: flex;
+    justify-content: center;
+}
 .headtop__top{
     display:flex;
-    width: 100%;
+    width: 1400px;
     height: 54px;
-    background: #274646;
+    justify-content: space-between;
+    padding: 0 auto;
 }
 .headtop__left{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
     gap: 24px;
 }
 /* .headtop_left__burg{
@@ -61,27 +69,26 @@ body {
 .headtop_left__adress{
     display: flex;
     font-size: 14px;
-    color: #FFE091; 
+    color: #FFE091;
     font-style: normal;
     align-items: center;
 }
 .headtop__right{
     display: flex;
-    width: 645px;
     align-items: center;
-    justify-content: flex-end;
-    align-content: center;
-    gap: 1em;
+    gap: 8px;
 }
 /* .headtop_right__shicon{ 
      margin-left: 430px; 
 }*/
 .headtop_right__shimigi{
     color: #FFBDC8;
+    font-size: 14px;
+    margin-right: 20px;
 }
-/* .headtop_right__bagshop{
-    padding-left: 30px;
-} */
+.headtop_right__bagshop{
+    display: flex;
+}
 .headtop_right__red_namber{
     color: #FFFFFF;
     font-size: 12px;
@@ -106,7 +113,7 @@ a {
 }
 .menu_top{
     display: flex;
-    height: 46px;
+    height: 48px;
     justify-content: center;
     align-items: center;
 }
@@ -137,7 +144,6 @@ a {
     display: flex;
     margin: 0 24px;
     background: #fcfffb;
-    font-size: 16px;
     align-items: center;    
     color: #274646;
     height: 46px;
@@ -164,19 +170,23 @@ a {
     flex-wrap: nowrap;
     flex-direction: row; 
     height: inherit; 
-    padding: 8px 0; 
    }
 .menulow__li{
     display: flex;
+    margin: 8px;
 }
 .menulow__botton{
-    background: #E9E6E6;
-    color: #274646;
+    color: #6B6B6B;
     padding: 12px 12px 12px 14px;
     border-radius: 46px;
-    transition: .5s;
-    border: none;
     font-weight: 700;
+    border: 2px solid #F7F7F7;
+}
+.menulow__botton:active{
+    color: #274646;
+    background: #E9E6E6;
+    border: none;
+    border: 2px solid #E9E6E6;
 }
 li{
     list-style: none;
@@ -204,16 +214,114 @@ li{
     background-color: #A0A0A0;
 }
 
-.story_block{   
-
+.story_block{
     width: 160px;
     height: 284px;
     padding: 2px;
-    margin: 20px 8px;
+    margin: 16px 8px 34px 8px;
     border-radius: 16px;
     border: 2px solid #F293A2;
-
 }
+/* |||||||||||||||||||||||||||||||||Animation||||||||||||||||||| */
+.anima_block__rolls{
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%); 
+    margin: 48px 0 32px 0;
+}
+.anima_block__rolls div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__rolls 10s linear infinite;  
+}
+.anima_block__rolls h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #FFD8E1;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__rolls h1:after {
+content:"РОллы";  
+}
+.anima_block__rolls span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__rolls {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* ???????????????SUSHI??????????????????? */
+.anima_block__sushi{
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%); 
+    margin: 48px 0 32px 0;
+}
+.anima_block__sushi div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__sushi 10s linear infinite;
+}
+.anima_block__sushi h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #FFE091;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__sushi span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__sushi {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* \\\\\\\\\\\\\\\\\ПОКЕ\\\\\\\\\\\\\\\\\\\ */
+.anima_block__poke{
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #001918 0%, #003D3D 100%); 
+    margin: 48px 0 32px 0;
+}
+.anima_block__poke div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__poke 10s linear infinite;
+}
+.anima_block__poke h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #006666;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__poke span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__poke {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
     /* /////////////////////////////////////   CART   ////////////////////////////////// */
 .hedder_cart{
     grid-area: head; 
@@ -344,9 +452,7 @@ li{
     font-weight: 400;
     font-style: normal;
 }
-
 /* Medium */
-
 @font-face {
     font-family: 'ValueSansPro';
     src: local('ValueSansPro'),
@@ -368,8 +474,16 @@ li{
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'rimma-sans-bold';
+    src: local('rimma-sans-bold'),
+         url('rimma-sans-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 /* Media begin */
+
 @media (max-width: 575px) {
     .container {
         padding: 0 0.75rem;
@@ -388,9 +502,6 @@ li{
     .container {
         max-width: 720px;
     }
-    /* .cart{
-
-    } */
 
 }
 
@@ -404,14 +515,23 @@ li{
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+        
     }
+    .headtop__color{
+        background-color: red;
 
+    }
+    .headtop__top{
+        width: 1227px;
+    }
 }
 
 @media (min-width:1400px) {
     .container {
         max-width: 1320px;
     }
-
+    .headtop__color{
+        background-color: green;
+}
 }
 /* Media end */
