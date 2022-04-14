@@ -133,7 +133,7 @@ width: 0;
     margin: 0 26px 0 0;
 }
 .menutop__li:last-child{
-    margin: 0 0 0 26px;;
+    margin: 0 0 0 26px;
 }
 a {
     background: inherit;
@@ -195,9 +195,9 @@ li{
 /* ///////////////////////////////////////// */
 
 
-.zagluchka{
+/* .zagluchka{
     height: 156px;
-}
+} */
 .story_cont{
     display:flex;
     margin: 0 auto;
@@ -228,6 +228,7 @@ li{
     overflow: hidden;
     background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%); 
     margin: 48px 0 32px 0;
+    width:inherit;
 }
 .anima_block__rolls div {
     display: flex;
@@ -259,6 +260,7 @@ content:"РОллы";
 }
 /* ???????????????SUSHI??????????????????? */
 .anima_block__sushi{
+    
     height: 100px;
     overflow: hidden;
     background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%); 
@@ -488,6 +490,12 @@ content:"РОллы";
     .container {
         padding: 0 0.75rem;
     }
+    /* .menutop__li:first-child{
+        margin: auto;
+    }
+    .menutop__li:last-child{
+        margin: auto;
+    } */
 
 }
 
@@ -495,6 +503,12 @@ content:"РОллы";
     .container {
         max-width: 540px;
     }
+    /* .menutop__li:first-child{
+        margin: auto;
+    }
+    .menutop__li:last-child{
+        margin: auto; */
+    /* } */
 
 }
 
@@ -502,6 +516,12 @@ content:"РОллы";
     .container {
         max-width: 720px;
     }
+    /* .menutop__li:first-child{
+        margin: auto;
+    }
+    .menutop__li:last-child{
+        margin: auto;
+    } */
 
 }
 
@@ -509,6 +529,12 @@ content:"РОллы";
     .container {
         max-width: 960px;
     }
+    /* .menutop__li:first-child{
+        margin: auto;
+    }
+    .menutop__li:last-child{
+        margin: auto;
+    } */
 
 }
 
@@ -517,6 +543,9 @@ content:"РОллы";
         max-width: 1140px;
         
     }
+
+    }
+
     .headtop__color{
         background-color: red;
 
@@ -524,11 +553,25 @@ content:"РОллы";
     .headtop__top{
         width: 1227px;
     }
+    /* .menutop__li:first-child{
+        margin: auto;
+    }
+    .menutop__li:last-child{
+        margin: auto;
+    } */
+    
+.menutop__ul
+.story_cont
+ {
+    width: 100%;
+}
+    .cont_cart{
+        margin: 0;
 }
 
 @media (min-width:1400px) {
     .container {
-        max-width: 1320px;
+        /* max-width: 1320px; */
     }
     .headtop__color{
         background-color: green;
