@@ -1,0 +1,100 @@
+.anima_block__rolls{
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%); 
+    margin: 48px 0 32px 0;
+    width:inherit;
+}
+.anima_block__rolls div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__rolls 10s linear infinite;  
+}
+.anima_block__rolls h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #FFD8E1;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__rolls h1:after {
+content:"РОллы";  
+}
+.anima_block__rolls span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__rolls {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* ???????????????SUSHI??????????????????? */
+.anima_block__sushi{
+    
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%); 
+    margin: 48px 0 32px 0;
+}
+.anima_block__sushi div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__sushi 10s linear infinite;
+}
+.anima_block__sushi h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #FFE091;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__sushi span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__sushi {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* \\\\\\\\\\\\\\\\\ПОКЕ\\\\\\\\\\\\\\\\\\\ */
+.anima_block__poke{
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #001918 0%, #003D3D 100%); 
+    margin: 48px 0 32px 0;
+}
+.anima_block__poke div {
+    display: flex;
+    width: 200%;
+    animation: anima_block__poke 10s linear infinite;
+}
+.anima_block__poke h1 {
+    white-space: nowrap;
+    font-family: 'rimma-sans-bold';
+    color: #006666;
+    font-size: 80px;
+    line-height: 100%;
+} 
+.anima_block__poke span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+@keyframes anima_block__poke {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

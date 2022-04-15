@@ -1,0 +1,25 @@
+.story_cont{
+    display:flex;
+    margin: 0 auto;
+    width: 1295px;
+    padding-top: 160px;
+    overflow-x:scroll;
+}
+
+.story_cont::-webkit-scrollbar {
+    height: 2px;
+    background-color: #E5E5E5; 
+   
+}
+.story_cont::-webkit-scrollbar-thumb{
+    background-color: #A0A0A0;
+}
+
+.story_block{
+    width: 160px;
+    height: 284px;
+    padding: 2px;
+    margin: 16px 8px 34px 8px;
+    border-radius: 16px;
+    border: 2px solid #F293A2;
+}

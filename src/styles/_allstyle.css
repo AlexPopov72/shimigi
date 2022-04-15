@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    cursor: default;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+button{
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+body {
+    font-family: 'ValueSansPro', sans-serif;
+    min-height: 100vh;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    background: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+li{
+    list-style: none;
