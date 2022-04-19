@@ -17,3 +17,22 @@ function setNavLinks(data) {
         })
     }
 }
+const storyUrl = "https://github.com/AlexPopov72/acets/blob/main/story.json";
+let storyList = fetch(storyUrl)
+    .then(response => story.json())
+    .then(data => {
+        setNavLinks(data);
+        return data
+    });
+
+function setNavLinks(data) {
+    let storyBlock = document.querySelector('.menutop__ul');
+    if (storyBlock) {
+        Object.entries(data).forEach(item => {
+            if (item[1].status == true) {
+                let storyElenet = `<div class="story_block"><img src="${item[1].img}" alt="${item[2].alt}"></div>`
+                storyBlock.innerHTML += storyElenet;
+            }
+        })
+    }
+}
