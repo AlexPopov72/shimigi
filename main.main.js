@@ -1,5 +1,5 @@
-const menuTop = "../accepts/menu.json";
-fetch(menuTop)
+const baseUrl = "https://raw.githubusercontent.com/camelactive/assets/main/assets/assets.json";
+fetch(baseUrl)
     .then(response => response.json())
     .then(data => {
         setNavLinks(data);
