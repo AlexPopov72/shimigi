@@ -1,7 +1,7 @@
 .story_cont{
     display:flex;
     margin: 0 auto;
-    width: 1295px;
+    width: 90%;
     padding-top: 160px;
     overflow-x:scroll;
 }

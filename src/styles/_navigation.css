@@ -10,7 +10,7 @@
 .menutop__ul{
     display: flex;
     overflow-x: auto;
-    width: 1295px;
+    width: inherit;
     border-bottom: 1px solid #E5E5E5;
     }
 .menutop__ul::-webkit-scrollbar{
@@ -37,7 +37,6 @@ width: 0;
 .menu__low{
     position: relative;
     display: flex;
-    width: 588px;
     height: 56px;
     /* flex-wrap: nowrap;  */
     margin-left: 260px;
