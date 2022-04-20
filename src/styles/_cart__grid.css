@@ -60,6 +60,7 @@
     /* .conteiner{
         margin: 0 1em;
     } */
+    .cart_hr{ display: none;}
 }
 
 @media (min-width: 768px) {
@@ -84,5 +85,4 @@
 
 @media (min-width:1400px) {
    
-}
-/* Media end */
+}}

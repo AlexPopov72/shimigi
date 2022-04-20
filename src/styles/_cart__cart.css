@@ -1,8 +1,9 @@
 .cart{
     display:grid;
     transition: .3s;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 3fr;
+    grid-auto-flow:row;
+    /* grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 3fr; */
 }
 .cart:hover{
     outline: 2px solid #F7F7F7;
@@ -10,15 +11,12 @@
     transition: .3s;
 }
 .cart_foto_block{
+    grid-area: img;
+    position: relative;
     height: 200px;
     margin: 1em 1em 0 1em;
-}
-.cart_icon{
-    display: flex;
-    top: 16px;
-    left: 16px;
-    gap: 8px;
-    z-index: 9;
+
+
 }   
 .cart_icon_shv{
     align-items: center;
@@ -36,27 +34,25 @@
     
 }
 .cart_name{
-    display: flex;
-    position: relative;
+    grid-area: name;
     font-style: normal;
     font-weight: 500;
     color: #6B6B6B;
-    margin-bottom: 4px;
 }
 .cart_composition{
+    grid-area: compos;
     font-weight: 400;
-    display: flex;
     font-size: 14px;
     line-height: 18px;
     color: #757575;
-    
 }
 .cart_prise{
+    grid-area: prise;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: end;
-    margin: 1em 0;
+    margin-top: 1em;
 }
 .cart_prise_old{
     /* display: flex; */
@@ -155,7 +151,25 @@
 }
 
 @media (min-width: 768px) {
-
+    .cart_icon{
+        display: none;
+    }
+    .cart_icon_big{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        gap: 8px;
+        z-index: 9;
+    }
+    .cart{
+        padding: 1em;
+        grid-template-areas:
+        "img"
+        "name"
+        "compos"
+        "prise";
+    }
 }
 
 @media (min-width: 992px) {
