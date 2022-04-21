@@ -50,7 +50,8 @@
         background: #000;
     }
     .cont_cart{
-        width: 90%; 
+        width: 92.6%;
+        grid-gap: 10px; 
         grid-template-columns: repeat(2, 6fr);
         grid-template-areas:
     "head head"
@@ -80,7 +81,7 @@
 }
 
 @media (min-width: 1200px) {
-    
+    .cont_cart{width: auto;}   
 }
 
 @media (min-width:1400px) {
