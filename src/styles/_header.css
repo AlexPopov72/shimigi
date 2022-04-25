@@ -5,7 +5,7 @@
 }
 
 .head{
-    /* position: fixed;  */
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,8 +33,14 @@
     display: flex;
     align-items: center;
     gap: 24px;
+    margin-left: 6px;
 }
-
+.headtop__left_mobi{
+    display: flex;
+    gap: 26px;
+    height: inherit;
+    align-items:inherit
+}
 .headtop_left__tel{
     font-size: 14px;
     color: #A0A0A0;
@@ -45,24 +51,25 @@
     color: #FFE091;
     font-style: normal;
     align-items: center;
+    gap: 6px;
 }
-.headtop__right{
+.headtop_basket{
     display: flex;
     align-items: center;
     gap: 8px;
 }
-/* .headtop_right__shicon{ 
-     margin-left: 430px; 
-}*/
-.headtop_right__shimigi{
+.headtop_basket__shimigi{
+    display: flex;
     color: #FFBDC8;
     font-size: 14px;
-    margin-right: 20px;
+    gap: 8.5px;
+    align-items: center;
+    margin-right: 18px;
 }
-.headtop_right__bagshop{
+.headtop_basket__counter{
     display: flex;
 }
-.headtop_right__red_namber{
+.headtop_basket__counter span{
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 900;
@@ -73,7 +80,117 @@
     line-height: 18px;
     border-radius: 50%;
 }
-.headtop_right__prisebag{
+.headtop_basket__prise{
     font-size: 14px;
     color: #FFFFFF;
+}
+.headtop_basket__prise::after{
+    content: " ₽";}
+.headtop_basket__counter h3{
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+
+}
+@media (max-width: 575px) {
+    .conteiner{
+        margin: 0 auto;
+        padding: .75rem;
+    }
+    .headtop__left{
+        width: 100%;
+        margin: 0 16px 0 20px;
+        justify-content: space-between;
+    }
+    .headtop_basket{
+        position:fixed;
+        bottom: 40px;
+        left: 1em;
+        right: 1em;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #274646;
+        border-radius: 46px;
+    }
+    .headtop_left__logo{
+        display: none;
+    }
+    .headtop_left__tel{
+        display: none;
+    }
+    .headtop_basket__shimigi{
+        display: none;
+    }
+
+}
+    
+
+@media (min-width: 576px) {
+    .headtop__color{
+        background-color: red;
+    }
+    .conteiner{
+        margin: 0 auto;
+        padding: .75rem;
+    }
+.headtop_left__logo{
+    display: flex;
+}
+.headtop_basket__counter h3,
+.headtop__logo_mob,
+.headtop_left__tel
+{display: none;}
+}
+@media (min-width: 768px) {
+    .headtop__color{
+        background-color: red;
+    }
+    .conteiner{
+        max-width: 720px;
+    }
+    .headtop__top{
+        margin: 0 27px;
+    }
+    .headtop__left{
+        width: 394px;
+    }
+    .headtop_basket{
+        min-width: 140px;
+    }
+    .headtop__logo_mob,
+.headtop_left__tel
+{display: none;}
+}
+@media (min-width: 992px) {
+.headtop__color{
+    background-color: #333;
+}
+}
+
+@media (min-width: 1200px) {
+    .conteiner{
+        max-width: 1140px;
+    } 
+    .headtop__top{
+        max-width: 1170px;
+    }
+    .headtop__left{
+    min-width: 513px;
+    margin: 0;
+    }
+    .headtop_left__tel{
+        display: flex;
+    }
+
+}
+
+@media (min-width:1400px) {
+    .conteiner{
+        max-width: 1295px;
+    } 
+    .headtop__top{
+        max-width: 1295px;
+}
 }
