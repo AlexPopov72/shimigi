@@ -1,9 +1,9 @@
 
-@import "_allstyle.css";
-@import "_header.css";
-@import "_navigation.css";
-@import "_story.css";
-/* @import "_animations.css";   */
-@import "_cart__grid.css";
-@import "_cart__cart.css";
-@import "_font.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_allstyle.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_header.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_navigation.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_story.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_animations.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_cart__grid.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_cart__cart.css";
+@import "https://alexpopov72.github.io/shimigi/src/styles/_font.css";
