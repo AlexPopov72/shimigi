@@ -1,4 +1,4 @@
-const baseUrl = "https://raw.githubusercontent.com/camelactive/assets/main/assets/assets.json";
+const baseUrl = "https://raw.githubusercontent.com/AlexPopov72/shimigi/main/src/accepts/menu.json";
 let categoryList = fetch(baseUrl)
     .then(response => response.json())
     .then(data => {
@@ -17,3 +17,4 @@ function setNavLinks(data) {
         })
     }
 }
+// const baseUrl = "https://raw.githubusercontent.com/camelactive/assets/main/assets/assets.json";
