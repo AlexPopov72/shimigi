@@ -13,12 +13,8 @@ function setNavLinks(data) {
         Object.entries(data).forEach(item => {
             if (item[1].status == true) {
                 let navElenet = `<li class="menutop__li"><a href="#">${item[1].name}</a></li>`
-                if(item[1].menulow != []){
-                    let nanLow = `<nav class = "menulow>`
                 }
                 navBlock.innerHTML += navElenet;
-
-            }
         })
     }
 }
