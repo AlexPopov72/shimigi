@@ -1,4 +1,4 @@
-const baseUrl = "https://raw.githubusercontent.com/AlexPopov72/shimigi/main/src/accepts/menu.json";
+const baseUrl = "https://raw.githubusercontent.com/AlexPopov72/shimigi/02Cart/src/js/menu.json";
 let categoryList = fetch(baseUrl)
     .then(response => response.json())
     .then(data => {
@@ -13,8 +13,8 @@ function setNavLinks(data) {
         Object.entries(data).forEach(item => {
             if (item[1].status == true) {
                 let navElenet = `<li class="menutop__li"><a href="#">${item[1].name}</a></li>`
-                }
                 navBlock.innerHTML += navElenet;
+            }
         })
     }
 }
