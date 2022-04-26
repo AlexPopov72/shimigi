@@ -1,9 +1,24 @@
 .cart{
     display:grid;
     transition: .3s;
+    /* grid-auto-flow:row; */
 
+    /* grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 3fr; */
+}
+.cart:hover{
+    outline: 2px solid #F7F7F7;
+    border-radius: 8px;
+    transition: .3s;
+}
+.cart_foto_block{
+    grid-area: img;
+    position: relative;
+    height: 200px;
+    /* margin: 1em 1em 0 1em; */
 }   
-
+.cart_foto_block_mob
+{display: none;}
 .cart_icon_shv{
     align-items: center;
     gap: 8px;
@@ -30,7 +45,6 @@
     font-size: 14px;
     line-height: 27px;
     color: #757575;
-    
 }
 .cart_prise{
     grid-area: prise;
@@ -38,9 +52,11 @@
     align-items: end;
     justify-content: end;
     align-content: center;
-
+    /* height: 45px; */
+    /* padding-right: 1em; */
 }
 .cart_prise_old{
+    /* display: flex; */
     font-weight: 400;
     font-size: 14px;
     line-height: 33px;
@@ -77,7 +93,7 @@
         display:grid;
         grid-auto-flow:column;
         outline: none;
-        padding: 10px 16px;
+        padding: 10px;
         grid-auto-rows: minmax(31px, auto);
         grid-template-areas:
         "icon name name name"
@@ -129,79 +145,52 @@
 
 @media (min-width: 576px) { 
 .cart{
-    display: grid;
+    max-width: 339px;
+    padding: 1em;
     grid-template-areas:
+    "icon"
     "img"
     "name"
     "compos"
-    "prise"
+    "prise";
 }
-.cart:hover{
-    outline: 2px solid #F7F7F7;
-    border-radius: 8px;
-    transition: .3s;
-}
-.cart_foto_block{
-    grid-area: img;
-    position: relative;
-    height: 200px;
-    width: 307px;
-    margin: 15px 0px 0px 17px;
-    
-}
-.cart_info{
-    margin: 0 1em;
-}
-.cart_icon{display: none;}   
-.cart_foto_block_mob{display: none;}    
-.cart_prise{
-    margin: 0 7px 16px 0;
-    height: 45px;
-}
-.cart_icon_big{
-    display: flex;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    gap: 8px;
-    z-index: 3;
-}
+
+
 }
 @media (min-width: 768px) {
-
-
+    .cart_icon{
+        display: none;
+    }
+    .cart_icon_big{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        gap: 8px;
+        z-index: 9;
+    }
     .cart{
         max-width: 339px;
+        padding: 1em;
         grid-template-areas:
+        "icon"
         "img"
         "name"
         "compos"
-        "prise"
+        "prise";
     }
     .cart_foto_block_mob
     {display: none;}
-
 }
 
 @media (min-width: 992px) {
-   .cart_foto_block{
-       width: auto;
-       margin: 0;
-   }
-   .cart {
-    max-width: 252px;
- 
-}
-.cart_icon_big{
-    top: 16px;
-    left: 16px;
-}
+   
 }
 
 @media (min-width: 1200px) {
-    .cart_foto_block{
-        width: 252px;
-    }
+    .cart{
+        max-width: 306px;}
+
 }
 
 @media (min-width:1400px) {

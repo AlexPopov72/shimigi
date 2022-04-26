@@ -5,7 +5,7 @@
 }
 
 .head{
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     top: 0;
     width: 100%;
     background:#FFFFFF;
-    z-index: 1;
+    z-index: 5;
     height: 158px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -36,15 +36,17 @@
     gap: 24px;
     margin-left: 6px;
 }
-.headtop__left_mobi{
+.headtop__left_mobi{    
     display: flex;
     gap: 26px;
     height: inherit;
     align-items:inherit
 }
+.headtop_left__logo,
 .headtop_left__tel{
     font-size: 14px;
     color: #A0A0A0;
+    display:none;
 }
 .headtop_left__adress{
     display: flex;
@@ -98,14 +100,16 @@
 @media (max-width: 575px) {
     .conteiner{
         margin: 0 auto;
-        padding: .75rem;
+        padding: 1em;
     }
     .headtop__left{
+        min-width: none;
         width: 100%;
         margin: 0 16px 0 20px;
         justify-content: space-between;
     }
     .headtop_basket{
+        visibility: hidden;
         position:fixed;
         bottom: 40px;
         left: 1em;
@@ -118,9 +122,6 @@
     .headtop_left__logo{
         display: none;
     }
-    .headtop_left__tel{
-        display: none;
-    }
     .headtop_basket__shimigi{
         display: none;
     }
@@ -129,9 +130,6 @@
     
 
 @media (min-width: 576px) {
-    .headtop__color{
-        background-color: red;
-    }
     .conteiner{
         margin: 0 auto;
         padding: .75rem;
@@ -147,8 +145,7 @@ max-width: 90px;
 }
 
 
-.headtop_basket__counter h3,
-.headtop_left__tel
+.headtop_basket__counter h3
 {display: none;}
 }
 @media (max-width: 640px) {
@@ -168,9 +165,6 @@ max-width: 90px;
     .conteiner{
         max-width: 720px;   
     }
-    .headtop__color{
-        background-color: red;
-    }
     .headtop__top{
         margin: 0 12px;
     }
@@ -180,19 +174,17 @@ max-width: 90px;
     .headtop_basket{
         min-width: 140px;
     }
-    .headtop__logo_mob,
-.headtop_left__tel
+    .headtop__logo_mob
 {display: none;}
 }
 
 @media (min-width: 992px) {
     .conteiner{
+        margin: 0 auto;
         max-width: 95%;
+        padding: 0;
     } 
-.headtop__color{
-    background-color: #333;
-}
-.headtop_left__tel{
+ .headtop_left__tel{
     display: flex;
 }
 .headtop__left{
@@ -203,7 +195,8 @@ max-width: 90px;
 
 @media (min-width: 1280px) {
     .conteiner{
-        max-width: 1207px;
+        margin: 0 auto;
+        max-width: 1210px;
     } 
     .headtop__top{
         max-width: 1170px;
@@ -223,8 +216,8 @@ max-width: 90px;
 @media (min-width:1400px) {
     .conteiner{
         max-width: 1295px;
-        margin: 0;
         padding: 0;
+        margin: 0 auto;
     } 
     .headtop__top{
         padding: 0;
