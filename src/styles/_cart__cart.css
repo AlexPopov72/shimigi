@@ -203,6 +203,10 @@
     .cart {
         max-width: none;
 }
+    .cart_icon_big{
+    top: 0;
+    left: 0;
+    }
 }
 @media (min-width:1400px) {
    
