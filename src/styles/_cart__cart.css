@@ -199,11 +199,11 @@
 }
 
 @media (min-width: 1200px) {
-    .cart_foto_block{
-        width: 252px;
-    }
-}
 
+    .cart {
+        max-width: none;
+}
+}
 @media (min-width:1400px) {
    
 }
