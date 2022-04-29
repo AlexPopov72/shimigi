@@ -17,8 +17,8 @@ let cartList = fetch(cartUrl)
     //     }
     // }
 
-    document.querySelectorAll('.js-classic').forEach(item => {
-    item.addEventListener('click', function (e) {
+    // document.querySelectorAll('.js-classic').forEach(item => {}
+    // item.addEventListener('click', function (e) {})
 
     function setCartLinks(data) {
         let cartBlock = document.querySelector('.cont_cart');
@@ -52,7 +52,7 @@ let cartList = fetch(cartUrl)
                                 <button class="cart_prise_new">${item[1].prise}</button>  
                         </div>
                     </div>`
-                    cartBlock.innerHTML += cartElement;    
+                cartBlock.innerHTML += cartElement;    
                 }
             })
         }

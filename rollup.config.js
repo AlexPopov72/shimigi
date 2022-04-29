@@ -8,6 +8,7 @@ export default {
     },
     plugins: [
         scss({
+            input: 'src/styles',
             output: "style/style.sass",
             failOnError: true,
             runtime: require("sass"),

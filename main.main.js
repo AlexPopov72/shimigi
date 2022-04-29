@@ -1,8 +1,9 @@
-const baseUrl = "https://raw.githubusercontent.com/camelactive/assets/main/assets/assets.json";
+const baseUrl = "https://raw.githubusercontent.com/AlexPopov72/shimigi/02Cart/src/js/menu.json";
 fetch(baseUrl)
     .then(response => response.json())
     .then(data => {
         setNavLinks(data);
+
         return data
     });
 
@@ -11,7 +12,7 @@ function setNavLinks(data) {
     if (navBlock) {
         Object.entries(data).forEach(item => {
             if (item[1].status == true) {
-                let navElenet = `<li class="menutop__li"> <a href="#">${item[1].name}</a></li>`;
+                let navElenet = `<li class="menutop__li"><a href="#">${item[1].name}</a></li>`;
                 navBlock.innerHTML += navElenet;
             }
         });

@@ -19,7 +19,6 @@
  .menutop__li:first-child{
     margin: 0 26px 0 0;
 }
-
 .menutop__li{
     display: flex;
     position: relative;
@@ -32,17 +31,14 @@
     position:relative;
 }
 .menutop__li:hover {
-    
     border-bottom: 3px solid #274646;
-    
 }
 .menutop__li:hover~.menu__low{
         display: flex;
         top: 100px;
         left: 0;
-    }
+}
 /* Нижнее меню с кнопками вместо ссылок */
-
 .menu__low{
     height: 56px;
     width: 100%;
@@ -91,8 +87,8 @@
 }
 @media (min-width: 992px) {
    .menu_top{
-    max-width: 95%;
-    position: static;
+        max-width: 95%;
+        position: static;
    }
 }
 
