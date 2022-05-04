@@ -1,11 +1,139 @@
+.footer_conteiner{
+background-color:#274646;
+display: flex;
+}
+.footer_top{
+width: 400px;
+margin: 64px auto;
 
+
+}
+.footer_menu{
+    display: flex;
+
+}
+.footer_menu ul{
+display: flex;
+flex-direction: column;
+margin: 0 auto 32px; 
+gap: 40px;
+align-items: center;
+
+}
+.footer_menu li{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: lowercase;
+    color: #F7F7F7;
+}
+.footer_menu a{
+
+} 
+.footer_line{
+    border: 1px solid #FFBDC8;
+}
+.footer_img{
+
+}
+.footer_soc_vk,
+.footer_soc_tg,
+.footer_soc_wu,
+.footer_soc_ins,
+.footer_logo::after{
+    content:'';
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: cover;
+}
+
+.footer_logo::after{
+margin: 32px auto;
+
+background-image: url(../img/logo_mob.svg);
+}
+.footer_social{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+.footer_soc_ins{
+    background-image: url(../img/instagram.svg);
+}
+.footer_soc_wu{
+    background-image: url(../img/whatsapp.svg);
+}
+.footer_soc_tg{
+    background-image: url(../img/telegram.svg);
+}
+.footer_soc_vk{
+    background-image: url(../img/vk.svg);
+}
+.sunweb_conteiner{
+    background-color: #565D95;
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+
+}
+.footer_polit{
+    display: flex;
+    gap: 1em;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+.footer_polit_line{
+    text-decoration-line: underline;
+}
+.footer_sunweb{
+    display: flex;
+    line-height: 120%;
+    color: #fff;
+    height: 27px;
+    margin: 10px;
+    align-items: flex-end;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer_sunweb_yellow{
+    color:#F2AF29;   
+}
+.footer_sunweb img{
+    margin-left: 8px;
+    height: 27px;   
+    display: block;
+}
+
+@media (max-width: 576px) {
+
+}
 
 @media (min-width: 576px) {
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+.sunweb_conteiner{
+    flex-direction: column;
+}
+.sunweb_conteiner{
+    height: 79px;
+    padding: 10px 60px;
+    display: flex;
+    align-items: flex-end;
 
+}
+.footer_sunweb{
+    margin: 0;
+}
 }
 @media (min-width: 992px) {
    
