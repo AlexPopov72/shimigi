@@ -3,9 +3,9 @@ background-color:#274646;
 display: flex;
 justify-content: space-around;
 }
-
-
-
+.footer_top{
+margin: 64px auto;
+}
 
 .footer_menu{
     display: flex;
@@ -27,15 +27,10 @@ align-items: center;
     text-transform: lowercase;
     color: #F7F7F7;
 }
-.footer_menu a{
-
-} 
 .footer_line{
-    border: 1px solid #FFBDC8;
+    border-bottom: 1px solid #FFBDC8;
 }
-.footer_img{
 
-}
 .footer_soc_vk,
 .footer_soc_tg,
 .footer_soc_wu,
@@ -73,8 +68,6 @@ background-image: url(../img/logo_mob.svg);
 }
 .sunweb_conteiner{
     background-color: #565D95;
-    display: flex;
-    height: 47px;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
@@ -101,20 +94,20 @@ background-image: url(../img/logo_mob.svg);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    
 }
 .footer_sunweb_yellow{
     color:#F2AF29;   
 }
 .footer_sunweb img{
-    margin-left: 8px;
+    margin-left: 9px;
     height: 27px;   
     display: block;
+    width: 76px;
 }
 
 @media (max-width: 576px) {
-    .footer_conteiner{
 
-    }
 .sunweb_conteiner{
     height: 154px;
     padding: 16px;
@@ -145,14 +138,17 @@ background-image: url(../img/logo_mob.svg);
 }
 
 @media (min-width: 576px) {
+    .footer_top{
+        width: 400px;
+}
     .sunweb_conteiner{
         height: 79px;
         padding: 10px 8px;
         display: flex;
         align-items: flex-end;
     }
-        .sunweb_conteiner{
-            flex-direction: column;
+    .sunweb_conteiner{
+        flex-direction: column;
 }
 }
 @media (min-width: 768px) {
@@ -171,10 +167,13 @@ background-image: url(../img/logo_mob.svg);
 }
 }
 @media (min-width: 992px) {
-    .footer_top{
-        width: 400px;
-        margin: 64px auto;
+    .sunweb_conteiner{  
+        display: flex;
+        height: 47px;
+        flex-direction:row;
+        align-items: center;
     }
+        
 }
 
 @media (min-width: 1200px) {
