@@ -31,6 +31,9 @@
     position:relative;
 }
 .menutop__li:hover {
+    border-bottom: 3px solid #b106f5;
+}
+.menutop__li:active{
     border-bottom: 3px solid #274646;
 }
 .menutop__li:hover~.menu__low{

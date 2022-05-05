@@ -56,6 +56,11 @@ background-image: url(../img/logo_mob.svg);
 }
 .footer_soc_ins{
     background-image: url(../img/instagram.svg);
+    content:'';
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: cover;
 }
 .footer_soc_wu{
     background-image: url(../img/whatsapp.svg);
@@ -65,7 +70,26 @@ background-image: url(../img/logo_mob.svg);
 }
 .footer_soc_vk{
     background-image: url(../img/vk.svg);
+    content:'';
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: cover;
 }
+.footer_soc_vk:hover{
+    background-image: url(../img/vk-pink.svg);
+}
+.footer_soc_tg:hover{
+    background-image: url(../img/tg-pink.svg);
+}
+.footer_soc_wu:hover{
+    background-image: url(../img/WhatsApp-pink.svg);
+}
+.footer_soc_ins:hover {
+    background-image: url(../img/Instagram-pink.svg);
+}
+
+/* нижняя часть с информацией sunweb */
 .sunweb_conteiner{
     background-color: #565D95;
     justify-content: space-between;
@@ -105,7 +129,7 @@ background-image: url(../img/logo_mob.svg);
     display: block;
     width: 76px;
 }
-
+/* Медиа */
 @media (max-width: 576px) {
 
 .sunweb_conteiner{
