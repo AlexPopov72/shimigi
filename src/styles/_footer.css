@@ -1,13 +1,12 @@
 .footer_conteiner{
 background-color:#274646;
 display: flex;
+justify-content: space-around;
 }
-.footer_top{
-width: 400px;
-margin: 64px auto;
 
 
-}
+
+
 .footer_menu{
     display: flex;
 
@@ -113,14 +112,50 @@ background-image: url(../img/logo_mob.svg);
 }
 
 @media (max-width: 576px) {
+    .footer_conteiner{
 
+    }
+.sunweb_conteiner{
+    height: 154px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.footer_top{
+    width: 211px;
+    margin: 64px;
+}
+.footer_menu ul{
+    margin: 0 auto 58px;
+}
+.footer_polit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer_logo::after{
+    background-image: url(..//img/logomax.svg);
+    width: 196px;
+    height: 16px;
+}
+.footer_sunweb{
+    margin: 0;
+}
 }
 
 @media (min-width: 576px) {
-
+    .sunweb_conteiner{
+        height: 79px;
+        padding: 10px 8px;
+        display: flex;
+        align-items: flex-end;
+    }
+        .sunweb_conteiner{
+            flex-direction: column;
 }
-
-@media (max-width: 768px) {
+}
+@media (min-width: 768px) {
 .sunweb_conteiner{
     flex-direction: column;
 }
@@ -136,7 +171,10 @@ background-image: url(../img/logo_mob.svg);
 }
 }
 @media (min-width: 992px) {
-   
+    .footer_top{
+        width: 400px;
+        margin: 64px auto;
+    }
 }
 
 @media (min-width: 1200px) {
